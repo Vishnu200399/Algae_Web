@@ -1,0 +1,5 @@
+# Change directory to your dataset location
+%cd /content/drive/MyDrive/algae_images-master/algae_images-master
+
+# Train the model with YOLOv8m and 100 epochs
+!yolo task=detect mode=train model=yolov8m.pt data=/content/drive/MyDrive/algae_images-master/data.yaml epochs=100 imgsz=640 plots=True
